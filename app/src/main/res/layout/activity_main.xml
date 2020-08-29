@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textSize="@dimen/Tamanotitulos"
+
+        android:layout_gravity="center"/>
+   <com.google.android.material.textfield.TextInputLayout
+
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:errorEnabled="true"
+       >
+       <com.google.android.material.textfield.TextInputEditText
+           android:id="@+id/tilNombre"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="@string/Nombre"
+           android:padding="@dimen/padding"/>
+   </com.google.android.material.textfield.TextInputLayout>
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/imgFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icons8_calendar_48"
+            />
+       <com.google.android.material.textfield.TextInputEditText
+           android:id="@+id/tietFecha"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="@string/Fecha"
+           android:padding="@dimen/padding"/>
+   </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiettelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Telefono"
+            android:padding="@dimen/padding"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Email"
+            android:padding="@dimen/padding"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietdescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Descripcion"
+            android:padding="@dimen/padding"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/Buttonsiguiente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonsig"
+        android:theme="@style/ButtonRise"
+        android:layout_gravity="bottom"/>
+
+
+</LinearLayout>
